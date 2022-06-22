@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Meie+Script&family=Roboto:wght@300&family=Tiro+Gurmukhi&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+header ul {
+    list-style: none;
+
+}
+header h1 {
+    border-bottom: 3px solid #FF0000;
+}
+header ul a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.telbtn {
+    height: 42px !important;
+    width: 18%;
+    background-color: #FF0000;
+    color: white;
+    font-size: medium;
+    border: 0;
+    cursor: pointer;
+}
+.link {
+    border: 4px solid #FF0000;
+    padding: 0 10px;
+    width: 75%;
+    height: 42px;
+}
+.link:focus{
+    outline: none;
+}
+.link::placeholder {
+    font-size: medium;
+}
+#main-form {
+    width: 45%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+#title {
+    font-family: 'Tiro Gurmukhi', serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.select ul li.option:not([disabled]):hover {
+    background-color: #fa3131;
+    color: white;
+}
+.select ul li.option.init {
+    text-align: center !important;
+}
+.select ul li.option {
+    z-index: 1;
+    padding: 5px;
+    list-style: none;
+    border-left: 1px solid #fa3131;
+    border-right: 1px solid #fa3131;
+}
+
+.select ul.closed li.option {
+    display: none;
+}
+
+.select ul.closed li:first-child {
+    display: block;
+}
+
+#formatSelect{
+    display: none;
+    padding: 0 10px;
+    font-size: medium;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#formatSelect .select{
+    border-top: 1px solid #FF0000;
+    border-bottom: 1px solid #FF0000;
+    width: 50%;
+    height: 35px !important;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+.telbtn2{
+    background-color: #fa3131;
+    border: 1px solid #fa3131;
+    color: white;
+    width: 50%;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+#formatSelect label {
+    font-size: large;
+}
+ @media (max-width: 1300px){
+    #main-form {
+        width: 55%;
+    }
+}
+@media (max-width: 1200px){
+    #main-form {
+        width: 70%;
+    }
+}
+@media (max-width: 1000px){
+    #main-form {
+        width: 75%;
+    }
+}
+@media (max-width: 800px){
+    #main-form {
+        width:85%;
+    }
+}
+@media (max-width: 700px){
+    #main-form {
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    #main-form {
+        width: 95%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .link {
+        width: 70%;
+    }
+    .telbtn {
+        width: 20%;
+    }
+}
+@media (max-width: 500px){
+    #main-form {
+        width: 95%;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .link {
+        width: 68%;
+    }
+    .link::placeholder {
+        font-size: small;
+    }
+    .telbtn {
+        width: 21%;
+        font-size: small;
+        margin: 0 auto;
+        margin: 0 4px;
+    }
+    header {
+        padding: 20px 30px;
+    }
+    header h1 {
+        font-size: x-large !important;
+    }
+    #formatSelect select{
+        margin: 0 5px;
+    }
+}
